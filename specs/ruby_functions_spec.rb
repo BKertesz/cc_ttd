@@ -87,8 +87,9 @@ class Functions_Practice < MiniTest::Test
   def test_fahrenheit_to_celsius()
     result = fahrenheit_to_celsius(30)#add test code here
     assert_equal(-1, result)
-    
+
   end
 
 
 end
+# This is a change
