@@ -43,19 +43,13 @@ when 9
 end
 
 def number_to_short_month_name(number)
-  case number
-when 1
-  return "Jan"
-when 3
-  return "Mar"
-when 9
-  return "Sep"
-  end
+  full_month = number_to_full_month_name(number)
+  return full_month.slice(0,3)
 end
 
 
-def volume_of_cube(length,width,height)
-  return length*width*height
+def volume_of_cube(length_of_side)
+  return length_of_side ** 2
 end
 
 def volume_of_sphere(radius)
